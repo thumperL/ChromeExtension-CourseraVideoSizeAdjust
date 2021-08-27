@@ -1,0 +1,7 @@
+{
+  "name": "Coursera Video Size Adjust",
+  "description": "A chrome plugin that adjusts that way too small floating video when you scroll down to read the text.",
+  "version": "1.0",
+  "manifest_version": 2,
+  "minimum_chrome_version": "18"
+}
