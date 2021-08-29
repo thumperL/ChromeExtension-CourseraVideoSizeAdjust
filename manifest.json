@@ -5,12 +5,29 @@
   "manifest_version": 2,
   "minimum_chrome_version": "18",
   "permissions": [
-    "tabs",
+    "activeTab",
+    "http://*/*",
+    "https://*/*",
     "storage"
   ],
   "background": {
     "scripts": [
       "background.js"
     ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*"
+      ],
+      "js": [
+        "popup.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Pop Up Control"
   }
 }
