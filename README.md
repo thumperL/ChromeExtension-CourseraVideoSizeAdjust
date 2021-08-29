@@ -27,6 +27,10 @@ This plugin does one thing only, allows you to adjust the class video size when 
 5. Click on the extension and enjoy freedom to adjust the video size
 
 
+## Disclaimer
+Use this extension at your own risk, I am not responsible for any issue it may cause.  This project is purely to assists me to help my studies on Coursera.
+
+
 ## Contributor
 
 > [Thumper](https://github.com/thumperL)
