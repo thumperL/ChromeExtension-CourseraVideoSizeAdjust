@@ -21,7 +21,7 @@
         "https://*/*"
       ],
       "js": [
-        "popup.js"
+        "content_adjust.js"
       ],
       "run_at": "document_end"
     }
