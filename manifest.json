@@ -6,8 +6,8 @@
   "minimum_chrome_version": "18",
   "permissions": [
     "activeTab",
-    "http://*/*",
-    "https://*/*",
+    "http://www.coursera.org/learn/*/*",
+    "https://www.coursera.org/learn/*/*",
     "storage"
   ],
   "background": {
@@ -18,7 +18,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://*/*"
+        "https://www.coursera.org/learn/*/*"
       ],
       "js": [
         "content_adjust.js"
