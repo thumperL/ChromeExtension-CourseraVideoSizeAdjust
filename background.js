@@ -5,9 +5,9 @@ chrome.runtime.onMessage.addListener(async (request) => {
   chrome.tabs.executeScript({
     code: `
     if (document.querySelector('style#coursera_video_width_style_tag') === null) {
-      document.body.insertAdjacentHTML('afterend', '<style id="coursera_video_width_style_tag">.rc-VideoMiniPlayer.mini .rc-VideoMiniControls, .rc-VideoMiniPlayer.mini .video-main-player-container {width: ${request.width}%;}</style>');
+      document.body.insertAdjacentHTML('afterend', '<style id="coursera_video_width_style_tag">.rc-VideoMiniPlayer.mini .rc-VideoMiniControls, .rc-VideoMiniPlayer.mini .video-main-player-container {width: ${request.width}%; height: auto;}</style>');
     } else {
-      document.querySelector('style#coursera_video_width_style_tag').innerHTML = ".rc-VideoMiniPlayer.mini .rc-VideoMiniControls, .rc-VideoMiniPlayer.mini .video-main-player-container {width: ${request.width}%;}";
+      document.querySelector('style#coursera_video_width_style_tag').innerHTML = ".rc-VideoMiniPlayer.mini .rc-VideoMiniControls, .rc-VideoMiniPlayer.mini .video-main-player-container {width: ${request.width}%; height: auto;}";
     }`
   });
   // Update the saved width
